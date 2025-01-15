@@ -6,16 +6,18 @@
 > - Your manifest includes script module and dependency.
 > 
 >   ```ts
+>   project.manifest.properties({
 >   ...
->   dependencies: {
->     server: {}
->   },
->   modules: {
->     scripts: {
->        entry: "main.js",
->      },
->   },
+>     dependencies: {
+>       server: {}
+>     },
+>     modules: {
+>       scripts: {
+>          entry: "main.js",
+>       },
+>     },
 >   ...
+>   });
 >   ```
 > - Make sure the '`./components/customPickaxe`' script is imported into your entry script (default: `main.js`)
 > 
